@@ -17,7 +17,7 @@
 	<link rel="stylesheet" type="text/css" href="css/responsive.css"> 
     <script src="js/pace.js"></script> 
 </head>
-<body>
+<body  onLoad="getTime()">
 	<div id="vid-overlay"></div>
 	<!-- Intro -->
 	<section id="intro">
@@ -38,26 +38,15 @@
 	</section>
 	<!-- About -->
 	<section id="clock-counter">
-	    <div id="flash_sales" style="background:#4DBFBF;">
-		<div class="container">
-			<div class="col-xs-12">
-				<div class="col-md-1 col-xs-2">
-					<span class="mdi-action-alarm"></span>
-				</div>
-				<div class="col-md-5 col-xs-10">
-						<h2 class="texto">RETO MOMENTUM</h2>
-						<h2 class="texto">POR TIEMPO LIMITADO!</h2>
-						<p class="time-rest" style="color:#000;text-shadow:2px 1px #fff;">No dejes pasar esta oportunidad</p>
-				</div>
-				<div class="ticket col-md-2 col-xs-12" >
-					
-					<div class="cuponn">
-						<p class="time-rest" style="text-shadow:none;">Ingresa al reto ya</p>
-					</div>
-				</div>
-				<div class="col-md-4 col-xs-12 reloj">
-					<p id="quedan" class="time-rest">FALTAN:</p>
-					<div class="inline-block">
+	   
+	    
+	    	<div class="reloj">
+	    	<div class="promodiv"><div class="promo"><h1>RETO MOMENTUM</h1></div>
+	    	<div class="promo-reloj"><h2>No dejes pasar esta oportunidad</h2></div></div>
+	    	
+	    	<div><a href="#" class="myButton">Ingresa ya al reto</a></div>
+					<div class="quedan"><p id="quedan" class="time-rest">FALTAN:</p></div>
+					<div class="clockrun"><div class="inline-block">
 						<h2 class="counter1" id="dias">00</h2>
 						<span class="pre block">días</span>
 					</div>
@@ -72,11 +61,17 @@
 					<div class="inline-block">
 						<h2 class="counter" id="seg">00</h2>
 						<span class="pre block">seg</span>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>	
+					</div></div>
+               
+               
+                
+            </div>
+				
+			
+	
+	    
+	        
+	    	
 	</section>
 	    
 	
@@ -209,7 +204,9 @@ La falta de tiempo es lo que más preocupa, por encima de la falta de dinero. <b
   	<script src="js/jquery.superscrollorama.js"></script>
 	<script src="js/jquery.diamonds.js"></script>
 	<script src="js/jquery.mb.YTPlayer.js"></script>
-	<script src="js/scripts.js"></script> <!-- Edit this -->
+	<script src="js/scripts.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="js/count.js"></script> <!-- Edit this -->
 	<!-- Put background video URL here  -->
 	<a class="player" data-property="{videoURL:'http://youtu.be/UDV5O4N4FE4',containment:'body',autoPlay:true, quality:'large',  mute:true, startAt:0,opacity:1}"></a>
 </body>

@@ -179,57 +179,41 @@ section {
     
 
 }
-div.container{
+.clock-counter{
     display: flex;
     flex-direction: row;
-    position: relative;
+    position:absolute;
     width: 100vw;
     justify-content: space-around;
+    height: 300px;
+  
 			
-    background-color: #4DBFBF;
+    background-color:#19BBD6;
 		}
-		.cuponn{
-			background: white;
-			border-radius: 5px;
-            display: inline-flex;
-			margin-top: 0px;
-            margin-left: 800px;
-            text-align: center;
-            padding: 10px 10px;
-            
-		}
-		.cuponn p{
-			color: black !important;
-			font-size: 25px !important;
-             display: inline-flex;
-			padding: 0px 0px;
-			text-align: center;
-            display: inline-flex;
-            
-            width: auto;
-		}
-		.mdi-action-alarm{
-			color: white;
-             display: inline-flex;
-			font-size: 95px;
-			text-shadow:5px 5px #000;
-		}
-		div.container.h2{
-			margin-top: 0 !important;
-			
-		}
-		h2.texto{
-			color:#FFF;
-			font-family: "Lato",sans-serif;
-			font-size: 30px;
-			font-weight: bold;
-			margin:20px;
-          
-		}
-.reloj {
+div.reloj {
+    background-color: #19BBD6;
+    display: flex;
+    padding: 20px;
+  
+    
 
-padding-left: 800px;
 }
+.promodiv { display: table;
+}
+.promo {
+    display: inline-flex;
+    font: normal 3.05em 'homizio_novaregular';
+    display: block;
+}
+.promo-reloj{
+    display: block;
+    font: 600 1.4em 'Open Sans', sans-serif;
+}
+.clockrun {
+    margin-left: 60px;
+    
+}
+
 		#Scroll{
 			display: none;
 			position: fixed;
@@ -277,9 +261,9 @@ padding-left: 800px;
 			font-size: 18px;
 			font-weight: bold;
 			margin-bottom: -10px;
-			margin: 0;
-			text-shadow: 4px 1px rgb(1, 113, 113);
-            padding: 10px;
+			margin: 20px;
+			
+            
 		}
 		.btn-shop{
 			background-color: #69cbf5 !important;
@@ -330,6 +314,51 @@ padding-left: 800px;
 		.block{
 			display: inline-block;
 		}
+
+
+/*boton*/
+
+.myButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #f29c93;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #f29c93;
+	box-shadow:inset 0px 1px 0px 0px #f29c93;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #fe1a00), color-stop(1, #ce0100));
+	background:-moz-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+	background:-webkit-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+	background:-o-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+	background:-ms-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+	background:linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fe1a00', endColorstr='#ce0100',GradientType=0);
+	background-color:#fe1a00;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #d83526;
+	display:inline-flex;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:9px 58px;
+	text-decoration:none;
+    margin-left: 50px;
+    margin-top: 25px;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ce0100), color-stop(1, #fe1a00));
+	background:-moz-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
+	background:-webkit-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
+	background:-o-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
+	background:-ms-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
+	background:linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ce0100', endColorstr='#fe1a00',GradientType=0);
+	background-color:#ce0100;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
 
 
 /*Section 2*/
